@@ -7,7 +7,7 @@ It was built as part of a Human-Computer Interaction (HCI) study.
 
 ## 🎯 Research Goal
 
-The purpose of this project is to **evaluate whether dark mode or light mode impacts reading comprehension speed**.
+The purpose of this project is to **evaluate whether dark mode or light mode impacts reading comprehension speed and accuracy**.
 
 ---
 
@@ -22,7 +22,7 @@ The purpose of this project is to **evaluate whether dark mode or light mode imp
   - Theme condition (light or dark)
 
 The **only variable** that changes between conditions is the theme.  
-This allows us to measure how interface design influences reading comprehension and perceived usability.
+This allows us to measure how interface design influences reading comprehension and accuracy.
 
 ---
 
