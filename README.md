@@ -1,7 +1,13 @@
 # Dark vs Light Mode Reading Comprehension
 
-This project is a lightweight web app designed to explore how interface theme (dark mode vs light mode) affects **reading comprehension, task performance, and user comfort**.  
+This project is a lightweight web app designed to explore how interface theme (dark mode vs light mode) affects **reading comprehension**.  
 It was built as part of a Human-Computer Interaction (HCI) study.
+
+---
+
+## 🎯 Research Goal
+
+The purpose of this project is to **evaluate whether dark mode or light mode impacts reading comprehension speed**.
 
 ---
 
@@ -14,7 +20,6 @@ It was built as part of a Human-Computer Interaction (HCI) study.
   - Time spent on the quiz (start → submission)
   - Comprehension score (number of correct answers)
   - Theme condition (light or dark)
-  - Optional feedback on eye comfort
 
 The **only variable** that changes between conditions is the theme.  
 This allows us to measure how interface design influences reading comprehension and perceived usability.
@@ -45,8 +50,7 @@ This allows us to measure how interface design influences reading comprehension 
 
 ---
 
-## 🚀 Getting Started
+## 👥 Authors
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/hci-dark-light-comprehension.git
+- 🖊️ [Jordan Waite](https://github.com/Jordan1819)  
+- 🖊️ [Scott Barfuss](https://github.com/their-username)
