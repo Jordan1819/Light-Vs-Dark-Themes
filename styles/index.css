@@ -1,0 +1,32 @@
+/* Styles for the home page */
+/* . for classes & # for IDs*/
+body {
+    background-color: slategray;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#homePage {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.homeBodyText {
+    font-size: 18px;
+}
+
+#startQuizButton {
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    font-size: 25px;
+    margin-top: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 1s, color 1s;
+}
+#startQuizButton:hover {
+    background-color: white;
+    color: black;
+}
