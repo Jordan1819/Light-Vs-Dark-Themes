@@ -22,8 +22,9 @@ function sendResultsToSheets(score) {
     // Get selected theme from localStorage
     const theme = localStorage.getItem('selectedTheme');
 
-    fetch("https://script.google.com/macros/s/AKfycbxiLJJCDuubMXeDNBeUVdfEYYyfZC6PohY7F5mLQsg_r3hjvgToB5xtsjF-lWbH1H3q/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbyQDy1NRUnnrDYeiXHE-5bmAWoa5Qn3_HD4o3Is_Gipy1n97M6EYogN-Ef2t8WHK01o/exec", {
         method: "POST",
+        mode: "no-cors", // bypass CORS
         body: JSON.stringify({
             theme: theme,
             score: score,
@@ -33,9 +34,8 @@ function sendResultsToSheets(score) {
             "Content-Type": "application/json"
         }
     })
-    .then(response => response.json())
-    .then(data => {
-        console.log("Success:", data);
+    .then(() => {
+        console.log("Data sent to Google Sheets (no response due to no-cors).");
     })
     .catch((error) => {
         console.error("Error:", error);
