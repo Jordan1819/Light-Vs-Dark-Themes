@@ -22,7 +22,7 @@ function sendResultsToSheets(score) {
     // Get selected theme from localStorage
     const theme = localStorage.getItem('selectedTheme');
 
-    fetch("https://script.google.com/macros/s/AKfycby5l3barPopTxMO7Vbsg6GMv4A_TcgCoVF2KDqDbhBRTIQtbP7PFbzknMbJrPrW3HUb/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbxiLJJCDuubMXeDNBeUVdfEYYyfZC6PohY7F5mLQsg_r3hjvgToB5xtsjF-lWbH1H3q/exec", {
         method: "POST",
         body: JSON.stringify({
             theme: theme,
