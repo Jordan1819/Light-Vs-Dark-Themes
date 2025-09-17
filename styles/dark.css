@@ -2,6 +2,19 @@ body {
   background-color: #121212; /* deep dark background */
   color: #ffffff;           /* white text */
   font-family: Arial, sans-serif;
-  margin: 0;
+  margin: 20px;
   padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+button {
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    margin-top: 50px;
+    cursor: pointer;
+    border-radius: 5px;
 }
