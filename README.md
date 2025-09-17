@@ -3,6 +3,7 @@
 This project is a lightweight web app designed to explore how interface theme (dark mode vs light mode) affects **reading comprehension**.  
 It was built as part of a Human-Computer Interaction (HCI) study.
 
+[Access the web app here!](https://jordan1819.github.io/Light-Vs-Dark-Themes/)
 ---
 
 ## 🎯 Research Goal
