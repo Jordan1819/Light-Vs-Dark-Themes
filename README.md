@@ -53,4 +53,4 @@ This allows us to measure how interface design influences reading comprehension 
 ## 👥 Authors
 
 - 🖊️ [Jordan Waite](https://github.com/Jordan1819)  
-- 🖊️ [Scott Barfuss](https://github.com/their-username)
+- 🖊️ [Scott Barfuss](https://github.com/ScottBBarfuss)
