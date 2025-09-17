@@ -22,7 +22,7 @@ function sendResultsToSheets(score) {
     // Get selected theme from localStorage
     const theme = localStorage.getItem('selectedTheme');
 
-    fetch("https://script.google.com/macros/s/AKfycbyQDy1NRUnnrDYeiXHE-5bmAWoa5Qn3_HD4o3Is_Gipy1n97M6EYogN-Ef2t8WHK01o/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbxWAPOgMTcBWcPEGZbnuJ8S_JzEqRX7rKkZcPISMXM5RlAdsmtR0FlSxX4t5G1J7rm3/exec", {
         method: "POST",
         mode: "no-cors", // bypass CORS
         body: JSON.stringify({
@@ -46,11 +46,11 @@ function sendResultsToSheets(score) {
 function calculateScore() {
     // Create list of correct answers
     const correctAnswers = {
-        q1: 'b',
-        q2: 'a',
-        q3: 'c',
-        q4: 'a',
-        q5: 'b'
+        q1: 'A',
+        q2: 'A',
+        q3: 'C',
+        q4: 'B',
+        q5: 'C'
     };
     let score = 0;
     // Iterate through each question
