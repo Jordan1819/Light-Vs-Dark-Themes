@@ -17,6 +17,12 @@ button {
     margin-top: 50px;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color .5s, color .5s;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
 }
 
 .questionContainer {
