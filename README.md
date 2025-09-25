@@ -36,18 +36,15 @@ This allows us to measure how interface design influences reading comprehension 
 - **Random assignment:** Users are redirected randomly to one of the two theme conditions when starting.
 - **Timing:** Captured using JavaScript timestamps (`Date.now()`).
 - **Scoring:** Calculated in-browser when the user submits answers.
-- **Data storage:**  
-  - Results can be exported locally as JSON, or  
-  - Sent to a backend/Google Sheets (optional, via a simple endpoint).
+- **Data storage:** Measurement metrics are sent to and stored in Google Sheets via an endpoint. 
 
 ---
 
 ## 📊 Data Collected
 
 - **Theme Condition** (light/dark)  
-- **Reading Time** (ms)  
+- **Reading Time** (seconds)  
 - **Comprehension Score** (# correct answers)  
-- **User Feedback** (optional survey: comfort/preference)
 
 ---
 
