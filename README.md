@@ -105,8 +105,11 @@ This allows us to measure how interface design influences reading comprehension 
 | **Dependent Variables** | Reading comprehension performance measured by: 1) **Accuracy** (number of correct answers), 2) **Time** (time to read + answer) |
 
 **Experiment Components:**
+
 **Treatments:** Random assignment of theme.
+
 **Units:** ISU students.
+
 **Between-group Design with Randomization of Independent Variable**
 
 **Notes:**  
