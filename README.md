@@ -54,6 +54,7 @@ This allows us to measure how interface design influences reading comprehension 
 - 🖊️ [Scott Barfuss](https://github.com/ScottBBarfuss)
 
 
+---
 # Project: Measuring the Impact of Light vs Dark Themes on Reading Comprehension
 
 ## Purpose & Hypothesis
