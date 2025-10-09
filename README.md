@@ -104,6 +104,11 @@ This allows us to measure how interface design influences reading comprehension 
 | **Independent Variable**| **Theme** — Light vs Dark (manipulated condition) |
 | **Dependent Variables** | Reading comprehension performance measured by: 1) **Accuracy** (number of correct answers), 2) **Time** (time to read + answer) |
 
+**Experiment Components:**
+**Treatments:** Random assignment of theme.
+**Units:** ISU students.
+**Between-group Design with Randomization of Independent Variable**
+
 **Notes:**  
 - Control variables: same passages, identical typography/spacing, consistent passage order or counterbalancing, similar ambient instructions.  
 - Randomize theme assignment (or counterbalance across participants) to avoid selection bias.
