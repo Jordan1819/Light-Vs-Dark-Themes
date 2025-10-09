@@ -58,9 +58,12 @@ This allows us to measure how interface design influences reading comprehension 
 # Project: Measuring the Impact of Light vs Dark Themes on Reading Comprehension
 
 ## Purpose & Hypothesis
-**Purpose:** Build an interface that covertly tests whether UI theme (light vs dark) affects reading comprehension and speed.  
+**Purpose:** Build an interface that covertly tests whether UI theme (light vs dark) affects reading comprehension and speed. 
+
 **Null Hypothesis:** There is no difference in reading comprehension when comparing themes.
+
 **Alternative Hypothesis:** There is a measurable difference in reading comprehension when comparing themes.
+
 **Type of Research:** Experimental - X is responsible for Y - Controlled experiment.
 
 ---
