@@ -55,7 +55,7 @@ This allows us to measure how interface design influences reading comprehension 
 
 
 ---
-# Project: Measuring the Impact of Light vs Dark Themes on Reading Comprehension
+# Experiment Design Choices, Specs, and Definitions
 
 ## Purpose & Hypothesis
 **Purpose:** Build an interface that covertly tests whether UI theme (light vs dark) affects reading comprehension and speed. 
@@ -110,7 +110,7 @@ This allows us to measure how interface design influences reading comprehension 
 **Between-group Design with Randomization of Independent Variable**
 
 **Notes:**  
-- Control variables: same passages, identical typography/spacing, consistent passage order or counterbalancing, similar ambient instructions.  
+- Control variables: same passage, identical typography/spacing, consistent passage, and questions.  
 - Randomize theme assignment (or counterbalance across participants) to avoid selection bias.
 
 ---
