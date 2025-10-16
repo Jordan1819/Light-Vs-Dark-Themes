@@ -8,46 +8,84 @@
 </head>
 <body>
     <div id="passageContainer">
-        <p>Passage goes here, optimally split up, for readability, with multiple 'p' tags in HTML.</p>
+        <div id = "passageContent" class="passage">
+        <p>
+        In controlled experiments on decision-making, researchers often observe that changing
+        the <em>default</em> option—what happens if a participant does nothing—can produce large shifts
+        in behavior without altering incentives or information. This phenomenon is frequently called
+        the “power of defaults.” While defaults are sometimes dismissed as mere presentation, they
+        can change how people interpret effort, risk, and social expectations, thereby shaping choices.
+        </p>
+        <p>
+        Consider two identical enrollment forms for a voluntary data-sharing program. The first is
+        <em>opt-in</em>, requiring a box to be checked; the second is <em>opt-out</em>, requiring a box to be
+        unchecked. Although participants face the same options and consequences, opt-out systems
+        generally see far higher enrollment. One explanation emphasizes cognitive frictions:
+        the minimal effort to change the default can loom large when attention is scarce.
+        Another explanation emphasizes implied endorsement: a default may be read as the
+        designer's recommendation, nudging participants to comply.
+        </p>
+        <p>
+        Yet defaults do not operate in a vacuum. Their influence depends on context, notably the
+        perceived reversibility of choices and the salience of trade-offs. Defaults are weaker when
+        changing one's mind is easy and costless, and stronger when switching seems complex or
+        socially conspicuous. Moreover, defaults can backfire. If users sense manipulation, they may
+        scrutinize the choice more carefully and reject the default on principle, a reaction sometimes
+        labeled reactance.
+        </p>
+        <p>
+        Policy designers therefore face a calibration problem. Defaults can promote beneficial
+        behaviors—such as retirement saving or privacy protection—without mandating them,
+        but only if they are transparent and aligned with participant welfare. When defaults are
+        opaque or self-serving, short-run gains may come at the expense of trust, eroding long-run
+        effectiveness. The challenge is not to eliminate defaults—they are unavoidable in any
+        interface—but to choose them so that inattention does not become exploitation.
+        </p>
+        </div>
         <button id="finishedReadingButton">Finished Reading</button>
     </div>
 
     <div id="quizContainer" style="display:none;">
-        <div class="questionContainer">
-            <p>Question here</p>
-            <label><input type="radio" name="q1" value="A"> Option A</label><br>
-            <label><input type="radio" name="q1" value="B"> Option B</label><br>
-            <label><input type="radio" name="q1" value="C"> Option C</label>
-        </div>
-        
-        <div class="questionContainer">
-            <p>Question here</p>
-            <label><input type="radio" name="q2" value="A"> Option A</label><br>
-            <label><input type="radio" name="q2" value="B"> Option B</label><br>
-            <label><input type="radio" name="q2" value="C"> Option C</label>
-        </div>
-        
-        <div class="questionContainer">
-            <p>Question here</p>
-            <label><input type="radio" name="q3" value="A"> Option A</label><br>
-            <label><input type="radio" name="q3" value="B"> Option B</label><br>
-            <label><input type="radio" name="q3" value="C"> Option C</label>
-        </div>
-
-        <div class="questionContainer">
-            <p>Question here</p>
-            <label><input type="radio" name="q4" value="A"> Option A</label><br>
-            <label><input type="radio" name="q4" value="B"> Option B</label><br>
-            <label><input type="radio" name="q4" value="C"> Option C</label>
-        </div>
-
-        <div class="questionContainer">
-            <p>Question here</p>
-            <label><input type="radio" name="q5" value="A"> Option A</label><br>
-            <label><input type="radio" name="q5" value="B"> Option B</label><br>
-            <label><input type="radio" name="q5" value="C"> Option C</label>
-        </div>
+    <!-- Q1: correct A -->
+    <div class="questionContainer">
+      <p><strong>1.</strong> What is the passage's central claim about defaults?</p>
+      <label><input type="radio" name="q1" value="A"> They can significantly shape choices by altering how effort, risk, and norms are perceived.</label><br/>
+      <label><input type="radio" name="q1" value="B"> They only matter when they change the monetary incentives of a decision.</label><br/>
+      <label><input type="radio" name="q1" value="C"> They work primarily because people misunderstand the available options.</label>
     </div>
+
+    <!-- Q2: correct A -->
+    <div class="questionContainer">
+      <p><strong>2.</strong> Which example does the passage use to illustrate default effects?</p>
+      <label><input type="radio" name="q2" value="A"> Enrollment differences between opt-in and opt-out data-sharing forms.</label><br/>
+      <label><input type="radio" name="q2" value="B"> Price changes in electricity markets following a subsidy.</label><br/>
+      <label><input type="radio" name="q2" value="C"> The impact of mandatory training on workplace safety.</label>
+    </div>
+
+    <!-- Q3: correct C -->
+    <div class="questionContainer">
+      <p><strong>3.</strong> According to the passage, when are defaults <em>less</em> influential?</p>
+      <label><input type="radio" name="q3" value="A"> When the default signals a clear recommendation by the designer.</label><br/>
+      <label><input type="radio" name="q3" value="B"> When switching from the default is socially visible.</label><br/>
+      <label><input type="radio" name="q3" value="C"> When changing one's mind is easy, costless, and obviously reversible.</label>
+    </div>
+
+    <!-- Q4: correct B -->
+    <div class="questionContainer">
+      <p><strong>4.</strong> Which finding would most <em>weaken</em> the passage's argument?</p>
+      <label><input type="radio" name="q4" value="A"> Participants report that they rarely notice defaults.</label><br/>
+      <label><input type="radio" name="q4" value="B"> In a large field study, opt-in and opt-out forms yield the same enrollment after controlling for effort and endorsement cues.</label><br/>
+      <label><input type="radio" name="q4" value="C"> Individuals who distrust designers spend longer deciding in opt-out settings.</label>
+    </div>
+
+    <!-- Q5: correct C -->
+    <div class="questionContainer">
+      <p><strong>5.</strong> What caution does the passage offer policy designers?</p>
+      <label><input type="radio" name="q5" value="A"> Defaults should be eliminated to preserve autonomy.</label><br/>
+      <label><input type="radio" name="q5" value="B"> Defaults work best when they are hidden from users to avoid reactance.</label><br/>
+      <label><input type="radio" name="q5" value="C"> Defaults should be transparent and aligned with welfare, or they risk eroding trust and long-run effectiveness.</label>
+    </div>
+  </div>
     <button id="submitButton" style="display:none;">Submit Quiz</button>
 
     <script src ="scripts/script.js"></script>
