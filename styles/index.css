@@ -30,3 +30,12 @@ body {
     background-color: white;
     color: black;
 }
+
+/* Control for window size */
+#homePage .homeBodyText,
+#homePage .rules {
+  max-width: clamp(36ch, 50vw, 70ch);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}

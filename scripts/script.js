@@ -13,6 +13,32 @@ function setTheme() {
 };
 setTheme();
 
+// If user already finished reading (same tab/session),
+// keep questions visible.
+(function enforcePhaseOnLoad() {
+    if (sessionStorage.getItem('readingFinished') === '1') {
+        const p = document.getElementById('passageContainer');
+        const q = document.getElementById('quizContainer');
+        const s = document.getElementById('submitButton');
+        if (p) p.style.display = 'none';
+        if (q) q.style.display = 'block';
+        if (s) s.style.display = 'inline-block';
+    }
+})();
+
+// If user hits the Back button after finishing, keep them on questions.
+window.addEventListener('popstate', () => {
+    if (sessionStorage.getItem('readingFinished') === '1') {
+        const p = document.getElementById('passageContainer');
+        const q = document.getElementById('quizContainer');
+        const s = document.getElementById('submitButton');
+        if (p) p.style.display = 'none';
+        if (q) q.style.display = 'block';
+        if (s) s.style.display = 'inline-block';
+        history.go(1);
+    }
+});
+
 // sendResultsToSheets: Send results to Google Sheets 
 // via Google Apps Script
 function sendResultsToSheets(score) {
@@ -66,9 +92,14 @@ function calculateScore() {
 // Finished reading button handler
 // Make the passage disappear and quiz appear
 document.getElementById('finishedReadingButton').addEventListener("click", () => {
+    sessionStorage.setItem('readingFinished', '1');
+
     document.getElementById("passageContainer").style.display = "none";
     document.getElementById("quizContainer").style.display = "block";
     document.getElementById("submitButton").style.display = "inline-block";
+
+    history.pushState({phase:'questions'}, '', '#q');
+    history.pushState({phase:'questions2'}, '', '#q2');
 });
 
 // Submit button handler
