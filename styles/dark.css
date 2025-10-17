@@ -26,9 +26,11 @@ button:hover {
 
 .questionContainer {
     margin-top: 50px;
+    margin: 50px auto 0;
     border: 2px solid white;
     padding-bottom: 15px;
     border-radius: 8px;
+    width: 50%;
 }
 
 /* Center the Finished Reading button */
@@ -60,3 +62,4 @@ button:hover {
   margin-left: auto;
   margin-right: auto;
 }
+
