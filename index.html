@@ -18,5 +18,20 @@
     document.getElementById('startQuizButton').onclick = function() {
         window.location.href = 'quiz.html';
     };
+    function setTheme() {
+        //Check if theme is already stored
+        let theme = localStorage.getItem('selectedTheme');
+        if (!theme) {
+            // If no theme, randomly select & store theme
+            theme = Math.random() < 0.5 ? 'light' : 'dark';
+            localStorage.setItem('selectedTheme', theme);
+        }
+        // Set theme for this page
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = `styles/${theme}.css`;
+        document.head.appendChild(link);
+    };
+    document.addEventListener('DOMContentLoaded', setTheme);
 </script>
 </html>

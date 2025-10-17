@@ -2,16 +2,20 @@ const startTime = Date.now();
 // setTheme: Randomly select a theme, store in localStorage, 
 // and apply css
 function setTheme() {
-    // Randomly select & store theme
-    const theme = Math.random() < 0.5 ? 'light' : 'dark';
-    localStorage.setItem('selectedTheme', theme);
+    //Check if theme is already stored
+    let theme = localStorage.getItem('selectedTheme');
+    if (!theme) {
+        // If no theme, randomly select & store theme
+        const theme = Math.random() < 0.5 ? 'light' : 'dark';
+        localStorage.setItem('selectedTheme', theme);
+    }
     // Set theme for this page
     const link = document.createElement('link');
     link.rel = 'stylesheet';
     link.href = `styles/${theme}.css`;
     document.head.appendChild(link);
 };
-setTheme();
+document.addEventListener('DOMContentLoaded', setTheme);
 
 // If user already finished reading (same tab/session),
 // keep questions visible.
