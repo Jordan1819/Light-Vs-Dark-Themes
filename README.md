@@ -66,6 +66,8 @@ This allows us to measure how interface design influences reading comprehension 
 
 **Type of Research:** Experimental - X is responsible for Y - Controlled experiment.
 
+**Cognitive Walkthrough**
+
 ---
 
 ## 1. Functional Requirements
