@@ -115,5 +115,6 @@ document.getElementById('submitButton').addEventListener("click", () => {
     document.getElementById("submitButton").style.display = "none";
     const resultDiv = document.createElement("div");
     resultDiv.textContent = `You scored ${score} out of 5. Thank you for your participation! Please close this tab.`;
+    resultDiv.style.marginTop = "10px";
     document.getElementById("quizContainer").appendChild(resultDiv);
 })
